@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chaset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contact = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial- scale =1.0">
+    <title>Datos cliente</title>
+</head>
+<style>
+
+    body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:justify;
+        }
+    
+    header {
+            
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <header>
+        <img src="./Imagenes/Logo dolce pasteleria.png" alt="Loce Dolce Pasteleria" width="200px">
+        <h1>Personaliza tu pastel</h1>
+        <p>Selecciona el tamaño, sabor e ingredientes de tu preferencia.</p>
+    </header>
+
+    <hr>
+<div>
+    <h3>Tamaño del pastel</h3>
+    <input type="radio" id="chico" name="Tamaño pastel" value="chico">
+    <label for="chico">Chico</label>
+    <label for="chico">Precio: $350.00</label>
+    <br>
+    <input type="radio" id="mediano" name="Tamaño pastel" value="mediano">
+    <label for="mediano">Mediano</label>
+    <label for="mediano">Precio: $480.00</label>
+    <br>
+    <input type="radio" id="grande" name="Tamaño pastel" value="grande">
+    <label for="grande">Grande</label>
+    <label for="mediano">Precio: $550.00</label>
+
+    <h3>Sabor del pastel</h3>
+    <img src="./Imagenes/Pastel chocolate.jpg" alt="Pastel de Chocolate" width="200px">
+    <br>
+    <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+    <label for="chocolate">Chocolate (+$50)</label>
+    <br><br>
+    <img src="./Imagenes/Pastel vainilla.jpg" alt="Pastel de vainilla" width="200px">
+    <br>
+    <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+    <label for="vainilla">Vainilla (+$50)</label>
+    <br><br>
+    <img src="./Imagenes/Pastel red velvet.jpg" alt="Pastel de red velvet" width="200px">
+    <br>
+    <input type="checkbox" id="red velvet" name="red velvet" value="red velvet">
+    <label for="red velvet">Red velvet (+60)</label>
+    <br><br>
+    <img src="./Imagenes/Pastel zanahoria.jpg" alt="Pastel de zanahoria" width="200px">
+    <br>
+    <input type="checkbox" id="zanahoria" name="zanahoria" value="zanahoria">
+    <label for="zanahoria">Zanahoria (+$60)</label>
+    <br><br>
+    <img src="./Imagenes/Pastel de zarzamora.jpg" alt="Pastel de zarzamora" width="200px">
+    <br>
+    <input type="checkbox" id="zarzamora" name="zarzamora" value="zarzamora">
+    <label for="zarzamora">Zarzamora (+$70)</label>
+
+    <p>Solo puede seleccionar máximo dos sabores.</p>
+
+    <h3>Tipo de cobertura</h3>
+    <input type="radio" id="Pastelera" name="Tipo de crema" value="Pastelera">
+    <label for="Pastelera">Pastelera</label>
+    <br>
+    <input type="radio" id="Fondant" name="Tipo de crema" value="Fondant">
+    <label for="Fondant">Fondant</label>
+    <br>
+    <input type="radio" id="Buttercream" name="Tipo de crema" value="Buttercream">
+    <label for="Buttercream">Buttercream</label>
+    <br>
+    <input type="radio" id="Chantilly" name="Tipo de crema" value="Chantilly">
+    <label for="Chantilly">Chantilly</label>
+    <br><br>
+
+    <p>Color de la cobertura</p>
+    <select name="Color cobertura" id="Color cobertura">
+        <option value="Chocolate">Chocolate</option>
+        <option value="Blanco">Blanco</option>
+        <option value="Rosa">Rosa</option>
+        <option value="Amarillo">Amarillo</option>
+        <option value="Azul">Azul cielo</option>
+        <option value="Lila">Lila</option>
+        <option value="Verde">Verde</option>
+        <option value="Naranja">Naranja</option>
+    </select>
+    <br>
+
+    <h3>Relleno</h3>
+    <input type="radio" id="Mermelada de fresa" name="Sabor de relleno" value="Mermelada de fresa">
+    <label for="Mermelada de fresa">Mermelada de fresa</label>
+    <br>
+    <input type="radio" id="Mermelada de Zarzamora" name="Sabor de relleno" value="Mermelada de Zarzamora">
+    <label for="Mermelada de Zarzamora">Mermelada de Zarzamora</label>
+    <br>
+    <input type="radio" id="Nutella" name="Sabor de relleno" value="Nutella">
+    <label for="Nutella">Nutella</label>
+    <br>
+    <input type="radio" id="Dulce de leche" name="Sabor de relleno" value="Dulce de leche">
+    <label for="Dulce de leche">Dulce de leche</label>
+    <br>
+    <input type="radio" id="Queso crema" name="Sabor de relleno" value="Queso crema">
+    <label for="Queso crema">Queso crema</label>
+    <br>
+    <input type="radio" id="Igual que la cobertura" name="Sabor de relleno" value="Igual que la cobertura">
+    <label for="Igual que la cobertura">Igual que la cobertura (excepto fondant)</label>
+    <br>
+
+    <h3>Decoración</h3>
+    <h4>Fruta</h4>
+    <input type="checkbox" id="Fresa" name="Fresa" value="Fresa">
+    <label for="Fresa">Fresa</label>
+    <br>
+    <input type="checkbox" id="Durazno" name="Durazno" value="Durazno">
+    <label for="Durazno">Durazno</label>
+    <br>
+    <input type="checkbox" id="Moras" name="Moras" value="Moras">
+    <label for="Moras">Moras</label>
+    <br>
+    <input type="checkbox" id="Kiwi" name="Kiwi" value="Kiwi">
+    <label for="Kiwi">Kiwi</label>
+
+    <h4>Otros</h4>
+    <input type="checkbox" id="Nuez" name="Nuez" value="Nuez">
+    <label for="Nuez">Nuez</label>
+    <br>
+    <input type="checkbox" id="Mermelada de fresa" name="Mermelada de fresa" value="Mermelada de fresa">
+    <label for="Mermelada de fresa">Mermelada de fresa</label>
+    <br>
+    <input type="checkbox" id="Mermelada de Zarzamora" name="Mermelada de Zarzamora" value="Mermelada de Zarzamora">
+    <label for="Mermelada de Zarzamora">Mermelada de zarzamora</label>
+    <br>
+    <input type="checkbox" id="Perlas comestibles" name="Perlas comestibles" value="Perlas Comestibles">
+    <label for="Perlas comestibles">Perlas comestibles</label>
+    <br>
+    <input type="checkbox" id="Sprinkles de colores" name="Sprinkles de colores" value="Sprinkles de colores">
+    <label for="Sprinkles de colores">Sprinkles de colores</label>
+    <br><br>
+
+    <h3>Mensaje en el pastel</h3>
+    <label for="Mensaje">Ingrese texto</label><br>
+    <input type="text" id = "Mensaje" name="Mensaje" placeholder="¡Feliz cumpleaños!"  maxlength="30">
+    <br><br>
+
+    <a href="./Datos cliente.html">
+        <input type="submit" value="Realizar pedido">
+    </a>
+
+    <br><br></div>
+    
+</body>

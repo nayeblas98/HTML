@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chaset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contact = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial- scale =1.0">
+    <title>Datos de pago</title>
+</head>
+
+<style>
+
+    body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:justify;
+        }
+    
+    header {
+            
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+    }
+
+</style>
+
+<body>
+
+    <header>
+    <img src="./Imagenes/Logo dolce pasteleria.png" alt="Logo pasteleria" width="200px">
+    <h1>PAGO</h1>
+    <p>Todas las transacciones son seguras y están encriptadas.</p>
+    </header>
+
+    <div>
+        <form action="Datos de pago.js">
+
+        <h3>Tipo de tarjeta</h3>
+        <input type="radio" id="Débito" name="Tipo de tarjeta" value="Débito">
+        <label for="Tipo de tarjeta">Débito</label>
+
+        <br>
+
+        <input type="radio" id="Crédito" name="Tipo de tarjeta" value="Crédito">
+        <label for="Tipo de tarjeta">Crédito</label>
+
+        <h3>Datos de la tarjeta</h3>
+
+        <input type="text" name="Número de tarjeta" id="Datos de la tarjeta"  placeholder="Número de tarjeta">
+        <br><br>
+        <input type="text" name="Nombre del titular" id="Datos de la tarjeta" placeholder="Nombre del titular"> 
+        <br><br>
+        <input type="text" name="Fecha de vencimiento" id="Fecha de vencimiento" placeholder="Fecha de vencimiento (MM/AA">
+        <br><br>
+        <input type="number" name="Código de seguridad" id="Código de seguridad"  maxlength="3" placeholder="Código de seguridad (CVV)">
+        <br><br>
+        
+        <input type="button" onclick="history.back()" name="Volver atrás" value="Volver atrás">
+        <input type="button" value="Realizar pago">
+    </div>
+        <br><br>
+
+
+        </form>
+</body>
